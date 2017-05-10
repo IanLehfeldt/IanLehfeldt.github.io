@@ -1,10 +1,9 @@
 body { 
   font: 16px Helvetica, Sans-Serif;
+  flex-direction: column;
   text-align: center;
   width: 100%;
   padding: 50px;
-  background-color: #ff9b28;
-  
 }
 
 h1 {
