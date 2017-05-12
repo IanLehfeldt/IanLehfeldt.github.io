@@ -2,13 +2,13 @@ body {
   font: 16px Helvetica, Sans-Serif;
   flex-direction: column;
   text-align: left;
-  border-radius: 5px;
-  background-color: #d4a083;
   width: 90%
 }
 
 h1 {
   font-size: 64px;
+  border-radius: 5px;
+  background-color: #d4a083;
 }
 
 h2 {
