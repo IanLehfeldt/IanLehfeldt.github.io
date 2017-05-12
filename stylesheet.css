@@ -2,8 +2,6 @@ body {
   font: 16px Helvetica, Sans-Serif;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  padding: 50px;
 }
 
 h1 {
@@ -19,6 +17,23 @@ h3{
   font-size: 18px;
 }
 
-ul > li {
-  justify-content: center;
+li{
+  list-style-type: square;
+}
+
+
+#summary{
+  border-radius: 5px;
+  width: 90%;
+  height: 200px;
+  background-color: #d4a083;
+}
+
+#education{
+}
+
+#skills{
+}
+
+.workexperience{
 }
