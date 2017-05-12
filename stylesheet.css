@@ -23,12 +23,3 @@ h3{
 li{
   list-style-type: square;
 }
-
-
-.summary{
-  border-radius: 5px;
-  width: 90%;
-  height: 200px;
-  background-color: #d4a083;
-}
-
