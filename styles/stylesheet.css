@@ -49,6 +49,25 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 80%;
 }
 
+footer {
+  padding: 40px 0;
+  background-color: #C0C1B3;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer li a, a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
+
 @media(max-width:767px) {
   .intro-message {
     padding-bottom: 15%;
@@ -140,23 +159,4 @@ body, h1, h2, h3, h4, h5, h6 {
   ul.banner-social-buttons>li:last-child {
     margin-bottom: 0;
   }
-}
-
-footer {
-  padding: 40px 0;
-  background-color: #C0C1B3;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-footer li a, a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 800px;
 }
