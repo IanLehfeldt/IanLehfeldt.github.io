@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Ian Lehfeldt Professional Website</title>
+
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
@@ -18,7 +19,6 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -40,10 +40,23 @@
     <header class="intro-header">
         <div class="container">
             <div class="intro-message">
+                <img src="./img/profile.png" height="128" width="128" style="border-radius: 50%; border-style:solid; border-color:black;">
                 <h1>Ian Lehfeldt</h1>
                 <h3>Full Stack Software Engineer</h3>
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
+                    <li class="list-inline-item">
+                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#carsModal">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Project: C.A.R.S.</span>
+                        </button>
+                    </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#wishlistModal">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Project: Wishlist!</span>
+                        </button>
+                    </li>
                     <li class="list-inline-item">
                         <a href="https://www.linkedin.com/in/ian-lehfeldt/" class="btn btn-info btn-lg">
                             <i class="fa fa-linkedin fa-fw"></i>
@@ -51,35 +64,109 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://github.com/IanLehfeldt" class="btn btn-info btn-lg">
+                        <a href="https://github.com/IanLehfeldt" class="btn btn-danger btn-lg">
                             <i class="fa fa-github fa-fw"></i>
                             <span class="network-name">Github</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://prime-solo-wishlist.herokuapp.com/#/home" class="btn btn-info btn-lg">
-                            <i class="fa fa-twitter fa-fw"></i>
-                            <span class="network-name">Wishlist!</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/Prime-CARS/CARS" class="btn btn-info btn-lg">
-                            <i class="fa fa-twitter fa-fw"></i>
-                            <span class="network-name">C.A.R.S.</span>
-                        </a>
-                    </li>
+
+
                 </ul>
             </div>
         </div>
     </header>
 
+    <!-- Wishlist Modal -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" role="dialog" aria-labelledby="wishlistModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Wishlist!
+                        <a href="https://prime-solo-wishlist.herokuapp.com/#/home">
+                            <p>Come check it out!</p>
+                        </a>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Wishlist! is a small full-stack web application designed to keep track of a user's wishlist as well as
+                        send user wishlists to friends for tracking.</p>
+                    <img class="modal-content" src="./img/userview-4.png">
+
+                    <img class="modal-content" src="./img/userview-2.png" alt="Users can log in and create wishlist blocks that show how many items are in the list, if items are bought and users can easily edit, delete and add new lists.">
+
+                    <img class="modal-content" src="./img/userview-3.png">
+
+                    <p>Tech Used: MongoDB, Express, Angularjs, Node, Nodemailer, Bootstrap, Sweetalerts2</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARS Modal -->
+    <div class="modal fade" id="carsModal" tabindex="-1" role="dialog" aria-labelledby="carsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">C.A.R.S.
+                        <a href="http://cars-ministry.herokuapp.com/">
+                            <p>Come check it out!</p>
+                        </a>
+                        <a href="https://github.com/Prime-CARS/CARS">
+                            <p>On Github</p>
+                        </a>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Problem: Client is in charge of managing a small non-profit organization designed to assist single-mothers
+                        and widows with cheap car repairs. Client worked entirely off of phone calls to schedule repairs
+                        and paper checklists that mechanics would often skip over entirely, not ensuring that the entire
+                        vehicle inspection was effectively done. Our client wanted mechanics to ensure inspection was finished
+                        before actual vehicle services started as well as ensure that mechanics were following through with
+                        a finished up checklist where they would describe services done as well as recording services recommended
+                        and refused.
+                        <img class="modal-content" src="./img/cars-landing.png">
+                        <ul>
+                            <li>Collaborated with a team of 5 others to design a web application</li>
+                            <li>The client could use the application to direct guests to a form to fill out and request services
+                                for their vehicles along with any reasons they could list for their service.</li>
+                            <li>The client could then sort through current requests and schedule services and set up vehicles
+                                with an online checklist for mechanics.</li>
+                            <li>Mechanics would then fill out the checklist for each vehicle and would not be able to continue
+                                with the submission process until the checklist was completely filled out.</li>
+                            <li>Afterwards, in order to ensure vehicles could be checked out of the system, mechanics would have
+                                to follow through with their final checklist. </li>
+                        </ul>
+                    </p>
+                    <img class="modal-content" src="./img/cars-mechanics.png">
+
+                    <img class="modal-content" src="./img/cars-checklist.png">
+
+                    <p>Tech Used: SQL, Express, Angularjs, Node, Nodemailer, Angular-Material, Sweetalerts2
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#">Tech Skills:</a>
-                </li>
+            <h3>
+                <a href="#techSkills" data-toggle="collapse">Current Tech Skills (Click me!) :</a>
+            </h3>
+            <ul class="list-inline collapse" id="techSkills">
                 <li class="list-inline-item">
                     <a href="#">Javascript</a>
                 </li>
@@ -89,15 +176,23 @@
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#">HTML</a>
+                    <a href="#">HTML5</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#">AngularJS</a>
+                    <a href="#">ES6</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#">Node</a>
+                    <a href="#">Angular.JS</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">React.JS</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">Node.JS</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
@@ -105,7 +200,7 @@
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
-                    <a href="#">Express</a>
+                    <a href="#">Express.JS</a>
                 </li>
                 <li class="footer-menu-divider list-inline-item">&sdot;</li>
                 <li class="list-inline-item">
