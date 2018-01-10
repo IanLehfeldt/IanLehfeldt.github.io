@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log('jQuery loaded');
+    // console.log('jQuery loaded');
 
 
     $('#palindromeButton').on('click', function () {
