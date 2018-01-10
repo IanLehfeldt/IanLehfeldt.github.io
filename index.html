@@ -25,6 +25,8 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <script src="scripts/client.js"></script>
+
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,6 +48,12 @@
                 <hr class="intro-divider">
                 <ul class="list-inline intro-social-buttons">
                     <li class="list-inline-item">
+                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#palindromeModal">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Project: Palindrome?</span>
+                        </button>
+                    </li>
+                    <li class="list-inline-item">
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#carsModal">
                             <i class="fa fa-twitter fa-fw"></i>
                             <span class="network-name">Project: C.A.R.S.</span>
@@ -57,24 +65,55 @@
                             <span class="network-name">Project: Wishlist!</span>
                         </button>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/ian-lehfeldt/" class="btn btn-info btn-lg">
-                            <i class="fa fa-linkedin fa-fw"></i>
-                            <span class="network-name">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/IanLehfeldt" class="btn btn-danger btn-lg">
-                            <i class="fa fa-github fa-fw"></i>
-                            <span class="network-name">Github</span>
-                        </a>
-                    </li>
+                    <p>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/ian-lehfeldt/" class="btn btn-info btn-lg">
+                                <i class="fa fa-linkedin fa-fw"></i>
+                                <span class="network-name">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/IanLehfeldt" class="btn btn-danger btn-lg">
+                                <i class="fa fa-github fa-fw"></i>
+                                <span class="network-name">Github</span>
+                            </a>
+                        </li>
+                    </p>
 
 
                 </ul>
             </div>
         </div>
     </header>
+
+    <!-- Is it a Palindrome Modal -->
+    <div class="modal fade" id="palindromeModal" tabindex="-1" role="dialog" aria-labelledby="palindromeModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Is it a Palindrome??
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Fun little javascript problem solving I played with</p>
+                    <p class="form-group">
+                        <label for="inputText">Type in a Palindrome:</label>
+                        <input type="text" id="inputText">
+                    </p>
+                    <button id="palindromeButton" class="btn btn-primary">Lets find out?</button>
+                    <p>
+                        <div id="message"></div>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Wishlist Modal -->
     <div class="modal fade" id="wishlistModal" tabindex="-1" role="dialog" aria-labelledby="wishlistModal" aria-hidden="true">
@@ -164,7 +203,7 @@
     <footer>
         <div class="container">
             <h3>
-                <a href="#techSkills" data-toggle="collapse">Current Tech Skills (Click me!) :</a>
+                <a href="#techSkills" data-toggle="collapse">Current Tech Skills +</a>
             </h3>
             <ul class="list-inline collapse" id="techSkills">
                 <li class="list-inline-item">
