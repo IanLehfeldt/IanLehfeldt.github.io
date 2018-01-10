@@ -51,18 +51,24 @@
                         </button>
                     </li>
                     <li class="list-inline-item">
-                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#carsModal">
-                            <i class="fa fa-github fa-fw"></i>
-                            <span class="network-name">Project: C.A.R.S.</span>
-                        </button>
-                    </li>
-                    <li class="list-inline-item">
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#wishlistModal">
                             <i class="fa fa-github fa-fw"></i>
                             <span class="network-name">Project: Wishlist!</span>
                         </button>
                     </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#carsModal">
+                            <i class="fa fa-github fa-fw"></i>
+                            <span class="network-name">Project: C.A.R.S.</span>
+                        </button>
+                    </li>
                     <p>
+                        <li class="list-inline-item">
+                            <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#aboutMeModal">
+                                <i class="fa fa-linkedin fa-fw"></i>
+                                <span class="network-name">About Me!</span>
+                            </button>
+                        </li>
                         <li class="list-inline-item">
                             <a href="https://www.linkedin.com/in/ian-lehfeldt/" class="btn btn-info btn-lg">
                                 <i class="fa fa-linkedin fa-fw"></i>
@@ -117,7 +123,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"><h3>Wishlist!</h3>
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        <h3>Wishlist!</h3>
                         <a href="https://prime-solo-wishlist.herokuapp.com/#/home">
                             Come check it out!
                         </a>
@@ -128,7 +135,9 @@
                 </div>
                 <div class="modal-body">
                     <p>Wishlist! is a small full-stack web application designed to keep track of a user's wishlist as well as
-                        send user wishlists to friends for tracking.</p>
+                        send user wishlists to friends for tracking.
+                        <br> I worked on wishlist as a solo project at Prime Digital
+                        Academy in response to tracking not only my own personal wants but families and friends as well!</p>
                     <img class="modal-content" src="./img/userview-4.png">
 
                     <img class="modal-content" src="./img/userview-2.png" alt="Users can log in and create wishlist blocks that show how many items are in the list, if items are bought and users can easily edit, delete and add new lists.">
@@ -149,7 +158,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"><h3>C.A.R.S.</h3>
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        <h3>C.A.R.S.</h3>
                         <a href="http://cars-ministry.herokuapp.com/">
                             Come check it out!
                         </a>
@@ -197,6 +207,39 @@
             </div>
         </div>
     </div>
+
+    <!-- About Me Modal -->
+    <div class="modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-labelledby="aboutMeModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">About Me:
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        StrengthFinder:
+                        <br> Achiever | Futuristic | Relator | Learner | Includer
+                    </p>
+                    <br>
+                    <p>
+                        Voracious Self-Learner, creative Problem-Solver; I'm a Full stack Software Engineer excited about the prospects of a career
+                        with a high demand for solving problems efficiently and effectively. I'm in love with the coding
+                        high of creative solutions as well as the strong sense of self-accomplishment I gain from growing
+                        as a developer. Professional team-player hoping to bring a positive attitude to your team!
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer>
