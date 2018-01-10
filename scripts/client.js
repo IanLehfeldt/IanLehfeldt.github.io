@@ -11,9 +11,9 @@ $(document).ready(function () {
             $('#message').append('<p>Please input a sentence</p>')
         } else {
             if (isItAPalindrome(palindromeInput)) {
-                $('#message').append('<p>Success! "' + palindromeInput + '" is a palindrome.</p>')
+                $('#message').append('<p>Success! <br>"' + palindromeInput + '" is a palindrome.</p>')
             } else {
-                $('#message').append('<p>Sorry! "' + palindromeInput + '" is not a palindrome.</p>')
+                $('#message').append('<p>Sorry! <br>"' + palindromeInput + '" is not a palindrome.</p>')
             }
         }
     });
